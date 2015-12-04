@@ -52,12 +52,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['news/create'] = 'news/create';
 $route['news/(:any)'] = 'news/view/$1';
-$route['sendmail/send'] = 'sendmail/send';
 $route['news'] = 'news';
+
 $route['login'] = 'users/login';
-$route['testLanguage'] = 'TestLanguage';
 $route['member/registration'] = 'users/registration';
+$route['member/slideshows'] = 'slideshows/create';
 $route['member/(:any)'] = 'pagesMember/view/$1';
+
 $route['(:any)'] = 'pages/view/$1';
 $route['default_controller'] = 'pages/view';
 //$route['404_override'] = '';
