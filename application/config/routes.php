@@ -56,8 +56,11 @@ $route['news'] = 'news';
 
 $route['login'] = 'users/login';
 $route['member/registration'] = 'users/registration';
-$route['member/slideshows'] = 'slideshows/create';
+$route['member/slideshows'] = 'slideshows';
+$route['member/slideshows/upload'] = 'slideshows/upload';
 $route['member/(:any)'] = 'pagesMember/view/$1';
+
+$route['contact'] = 'contact';
 
 $route['(:any)'] = 'pages/view/$1';
 $route['default_controller'] = 'pages/view';

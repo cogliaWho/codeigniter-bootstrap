@@ -13,8 +13,8 @@ class Users extends CI_Controller {
     {
         $data['title'] = 'User Registration';
 
-        $this->form_validation->set_rules('email', 'Email', 'required');
-        $this->form_validation->set_rules('password', 'Password', 'required');
+        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+        $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[6]');
 
         if ($this->form_validation->run() === FALSE)
         {
